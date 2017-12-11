@@ -22,4 +22,4 @@ standup:
     - 4
     - 5
 
-debug: true
+# debug: true
