@@ -1,0 +1,14 @@
+{
+  "name": "standup-octopus",
+  "version": "1.0.0",
+  "description": "I organize and facilitate daily standups!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edison Yap",
+  "license": "MIT",
+  "dependencies": {
+    "standup-steve": "^1.0.4"
+  }
+}

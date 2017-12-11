@@ -1,0 +1,25 @@
+# Slack API token
+token:
+  xoxb-284880722629-u0xNUs4xcWuzajkW21RCNE65
+
+# Bot configuration
+bot:
+  name: Standup Octopus
+  emoji: ':octopus:'
+  channel: test-channel
+# users that participate in the standup
+users:
+  - edisonywh
+
+standup:
+  # Time for the standup to commence in 24hour format, leading 0 required
+  time: 09:00
+  # days to perform standup 1 = Mon 5 = Fri
+  days:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+
+debug: true
