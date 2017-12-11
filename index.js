@@ -51,7 +51,7 @@ async function standUp(bot, user, timeout) {
     var statusDate = new Date(now.format("YYYY-MM-DDTHH:mm:ssZ"));
 
     var standupText = `:new_moon_with_face: *${
-      user.name
+      user.real_name
     }* posted a status update for \`${statusDate}\`:
 *${yesterdayQuestion}*
 > ${yesterday}
@@ -70,7 +70,7 @@ async function standUp(bot, user, timeout) {
     );
     bot.postMessageToChannel(
       botChannel,
-      `:new_moon_with_face: *${user.name}* missed today's standup`,
+      `:new_moon_with_face: *${user.real_name}* missed today's standup`,
       params
     );
   }
@@ -136,6 +136,9 @@ http://steve.tjaart.org/docs/slack_setup/
       var user = await bot.getUser(userNames[i]);
       users.push(user);
     }
+
+    // This commands allow me to get all user names
+    // bot.getUsers().then(response => console.log(response));
 
     // Have we stood up today?
     var stoodup = false;
