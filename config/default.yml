@@ -6,14 +6,18 @@ token:
 bot:
   name: Standup Octopus
   emoji: ':octopus:'
-  channel: test-channel
+  channel: standups
 # users that participate in the standup
 users:
   - edisonywh
+  - nirvana
+  - kevinlee
+  - eddy
+  - alwychristyo
 
 standup:
   # Time for the standup to commence in 24hour format, leading 0 required
-  time: 09:00
+  time: 10:30
   # days to perform standup 1 = Mon 5 = Fri
   days:
     - 1
